@@ -21,3 +21,6 @@ https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentine
 Malicious Traffic Entering the Network – Visualize incoming traffic flagged as potentially malicious to identify attack sources.
 
 https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/Allowed-Inbound-Malicious-Flows.json
+
+
+This approach ensures comprehensive visibility into both routine and suspicious network activity, supporting proactive security monitoring and enhanced situational awareness across the environment.
