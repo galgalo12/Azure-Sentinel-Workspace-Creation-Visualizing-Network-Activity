@@ -1,85 +1,108 @@
-### 🔍 Visualizing Network Activity, Identity Events, & Malicious Flows with Microsoft Sentinel
+# 🔍 Visualizing Network Activity, Identity Events, & Malicious Flows with Microsoft Sentinel
 
-## 📌 Overview
-This project demonstrates how to build a Microsoft Sentinel and visualize key security telemetry using **Azure Workbooks and KQL**. The goal is to enable analysts to quickly interpret network security data through **geographic maps**, identity activity charts, and incident investigation visualizations.
+This project demonstrates how to use **Microsoft Sentinel** to visualize key security telemetry through **Azure Workbooks** and **KQL queries**. The goal is to help analysts quickly interpret network and identity events using:
 
-This lab simulates a real SOC workflow, including:
-- World map visualization of network activity
-- Entra ID sign-in tracking (success/failure)
-- VM authentication failure analysis
-- Azure resource creation monitoring
-- Malicious inbound traffic detection
+- 🌍 Geographic mapping  
+- 🔐 Authentication activity tracking  
+- ☁️ Resource monitoring  
+- 🚨 Incident-focused visualizations  
 
-The project is aligned to **MITRE ATT&CK**, SOC analysis workflows, and security monitoring best practices.
+We use logs generated within our environment—some from students, others from real-world internet threat actors—to build **world map visualizations** based on originating IP addresses. These maps provide a clear picture of what's happening across the network and where activity is coming from geographically.
 
----
+Although this lab focuses on a few core examples, you can build map visualizations for **any log type**. What you choose to track depends on the needs and priorities of your organization.
 
-## 🎯 Objective
-Create a Sentinel workspace + workbook dashboard that provides:
-✔ Geographic threat visibility  
-✔ Identity access insights  
-✔ Resource creation monitoring  
-✔ Inbound attack visibility  
-✔ Live/near-real time detection capability  
+This SOC-focused lab simulates real operational workflows, including:
 
----
+- 🌍 **World map visualization of network activity**  
+- 🔐 **Entra ID sign-in tracking** (successful & failed authentication attempts)  
+- 💻 **VM authentication failure analysis**  
+- ☁️ **Azure resource creation monitoring**  
 
-## ⚙️ Logs Ingested
-| Source | Purpose |
-|--------|---------|
-| Entra ID (Azure AD) | Successful & failed authentication |
-| Azure Resource Manager Logs | Resource creation & change tracking |
-| NSG Flow Logs | Network activity & malicious inbound traffic |
-| VM Security Events | Authentication attempts & brute force |
+These visualizations help analysts detect anomalies, identify suspicious logins, and understand global attack patterns in seconds.
 
 ---
 
 ## 📊 Workbooks Included (JSON)
+
 | Workbook | Description |
 |----------|-------------|
-| [Entra Login Success](https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/Directory-Login-Successes.json) | Map of successful logins by IP |
-| Entra Login Failure | Credential misuse / brute force investigation |
-| Azure Resource Creation | Track & audit infrastructure deployment |
-| VM Authentication Failures | Detect access attempts on compute resources |
-| Malicious Inbound Flows | Map origin of malicious traffic |
+| **[Entra Login Success](https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/Directory-Login-Successes.json)** | Map of successful logins by IP |
+| **Entra Login Failure** | Investigate failed authentications, brute force patterns, and misuse |
+| **Azure Resource Creation** | Track & audit new infrastructure deployments |
+| **VM Authentication Failures** | Detect unauthorized access attempts on compute resources |
+| **Malicious Inbound Flows** | Map the geographic origin of hostile traffic |
 
 ---
 
-## 📎 Reference Workbooks (based on public examples)
+🚀 Deployment Instructions
+Option 1 – Manual Workbook Import
 
-These JSON files are used as inspiration:
-- Directory Login Successes  
-- Directory Login Failures  
-- Azure Resource Creation  
-- VM Authentication Failures  
-- Allowed Malicious Inbound Flows  
+Go to Microsoft Sentinel → Workbooks
 
-Source Repository: (`credits to Josh Madakor`)
+Click Add Workbook
 
----
+Click Edit
 
-## 🧠 Skills Demonstrated
-### 🔐 Security Engineering & SIEM
-- Azure Sentinel workspace deployment
-- Log source onboarding
-- Identity & network monitoring
-- Attack surface visibility
+Add a query component
 
-### 📈 Data Visualization
-- Azure Workbooks
-- Custom maps, time charts, and conditional formatting
-- SOC dashboard design and layout
+Paste the KQL from the JSON template
 
-### 🧵 KQL + Threat Hunting
-- Advanced log analysis
-- Threat mapping to MITRE ATT&CK
-- IP/location analysis
-- Network flow inspection
+<img src="https://github.com/user-attachments/assets/c4f462a9-3ee7-4fe8-aaed-9aeeea332f71" width="350">
 
-### 🧰 Cloud & DevOps
-- GitHub version control
-- Infrastructure logging pipelines
-- JSON-based dashboard deployment
+Run query → adjust visualization (map, chart, etc.)
+
+<img  src="https://github.com/user-attachments/assets/7a5c6248-83d6-4424-a241-81102482cddd" width="420">
+
+Save + pin to dashboard
+
+## 🔍 Step 4 — Run the KQL Query in Microsoft Sentinel
+
+Navigate to **Microsoft Sentinel → Logs** and run the KQL query provided in this project.
+
+Once executed, the query aggregates sign-in activity grouped by **user** and **location**.
+
+### ✅ Query Output Summary
+
+The results indicate that the user has successfully authenticated multiple times.
+
+**Successful Logins:** `6`  
+**All login attempts originated from the same location:**
+
+- **City:** Chicago  
+- **Country:** US  
+- **Latitude:** 41.8488  
+- **Longitude:** -87.6712  
+
+### 📘 What This Shows
+
+This KQL query helps validate that:
+
+- The user’s authentication activity is **consistent** and originates from a **single geolocation**.
+- No anomalous or suspicious geo-patterns were observed in these logins.
+
+### 🛡️ Why This Matters
+
+Understanding geolocation data is crucial for:
+
+- ✅ Detecting unusual or risky sign-in behavior  
+- ✅ Building **geolocation-based visualizations** (e.g., Maps, Workbooks)  
+- ✅ Investigating suspicious authentication activity  
+- ✅ Correlating user identity events with geographic patterns
+
+<img  src="https://github.com/user-attachments/assets/30f3141c-c34f-491c-aea0-6d1bd819b499" width="420"/>
+
+
+This information becomes an essential part of threat detection, incident investigations, and building SOC dashboards.
+
+### 📘 Additional Logs Added
+
+Here is the section I added after completing some of the log creation steps.  
+You can view the corresponding screenshot below.
+
+To finish the setup, simply repeat the same step-by-step process for the remaining logs in the **Azure Workbook**.
+
+<img src="https://github.com/user-attachments/assets/0b7f66d2-b350-4a7f-b65f-b2cc6afa4070" width="520" />
+
 
 ---
 
@@ -94,15 +117,6 @@ Source Repository: (`credits to Josh Madakor`)
 
 ---
 
-## 🚀 Deployment
-### Import workbooks manually:
-1. Microsoft Sentinel → Workbooks
-2. Upload workbook JSON
-3. Connect parameters to relevant tables
-4. Save + pin where needed
-
----
-
 ## Future Enhancements
 - Logic Apps for automatic alert response
 - Analytics rule automation
@@ -112,5 +126,3 @@ Source Repository: (`credits to Josh Madakor`)
 
 ---
 
-## 📜 License
-MIT License — free to use and modify.
