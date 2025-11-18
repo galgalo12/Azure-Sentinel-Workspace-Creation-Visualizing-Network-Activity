@@ -1,7 +1,7 @@
 ### 🔍 Visualizing Network Activity, Identity Events, & Malicious Flows with Microsoft Sentinel
 
 ## 📌 Overview
-This project demonstrates how to build a Microsoft Sentinel workspace and visualize key security telemetry using **Azure Workbooks and KQL**. The goal is to enable analysts to quickly interpret network security data through **geographic maps**, identity activity charts, and incident investigation visualizations.
+This project demonstrates how to build a Microsoft Sentinel and visualize key security telemetry using **Azure Workbooks and KQL**. The goal is to enable analysts to quickly interpret network security data through **geographic maps**, identity activity charts, and incident investigation visualizations.
 
 This lab simulates a real SOC workflow, including:
 - World map visualization of network activity
@@ -37,7 +37,7 @@ Create a Sentinel workspace + workbook dashboard that provides:
 ## 📊 Workbooks Included (JSON)
 | Workbook | Description |
 |----------|-------------|
-| Entra Login Success | Map of successful logins by IP |
+| Entra Login Success | Map of successful logins by IP | [Directory-Login-Successes.json](https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/Directory-Login-Successes.json) |
 | Entra Login Failure | Credential misuse / brute force investigation |
 | Azure Resource Creation | Track & audit infrastructure deployment |
 | VM Authentication Failures | Detect access attempts on compute resources |
