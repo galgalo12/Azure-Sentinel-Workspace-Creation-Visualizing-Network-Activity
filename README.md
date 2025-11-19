@@ -27,10 +27,10 @@ These visualizations allow analysts to detect anomalies, suspicious logins, and 
 | Workbook | Description |
 |----------|-------------|
 | **[Entra Login Success](https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/Directory-Login-Successes.json)** | Map of successful logins by IP |
-| **Entra Login Failure** | Investigate failed authentications, brute force patterns, and misuse |
-| **Azure Resource Creation** | Track & audit new infrastructure deployments |
+| **[Entra Login Failure](https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/Directory-Login-Failures.json)** | Investigate failed authentications, brute-force patterns, and misuse |
+| **[Azure Resource Creation](https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/VM-Authentication-Failures.json)** | Track & audit new infrastructure deployments |
 | **VM Authentication Failures** | Detect unauthorized access attempts on compute resources |
-| **Malicious Inbound Flows** | Map the geographic origin of hostile traffic |
+| **[Malicious Inbound Flows](https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/Allowed-Inbound-Malicious-Flows.json)** | Map the geographic origin of hostile traffic |
 
 ---
 
