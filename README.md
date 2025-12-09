@@ -115,7 +115,7 @@ Understanding geolocation data enables:
 
 After creating initial logs, you can repeat the same step-by-step process to add remaining logs in Azure Workbooks.
 
-<img src="https://github.com/user-attachments/assets/0b7f66d2-b350-4a7f-b65f-b2cc6afa4070" width="520"/>
+<img width="1599" height="567" alt="Workbook name" src="https://github.com/user-attachments/assets/f2bf3451-b4e9-48fb-9808-6d2898f7aacb" />
 
 ---
 
