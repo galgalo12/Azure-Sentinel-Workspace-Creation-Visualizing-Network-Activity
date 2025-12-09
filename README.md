@@ -16,7 +16,7 @@ This SOC-focused lab simulates real operational workflows, including:
 - 🌍 **World map visualization of network activity**  
 - 🔐 **Entra ID sign-in tracking** (successful & failed attempts)  
 - 💻 **VM authentication failure analysis**  
-- ☁️ **Azure resource creation monitoring**  
+- ☁️ **Azure resource creation monitoring**
 
 These visualizations allow analysts to detect anomalies, suspicious logins, and understand global attack patterns in seconds.  
 
@@ -41,8 +41,10 @@ These visualizations allow analysts to detect anomalies, suspicious logins, and 
 1. Navigate to **Microsoft Sentinel → Workbooks**  
 2. Click **Add Workbook**  
 3. Click **Edit**  
-4. Add a **query component**  
-5. Paste the KQL from the JSON template  
+4. Add a **query component**
+5. **[ Paste the KQL from the JSON template](https://github.com/joshmadakor1/lognpacific-public/blob/main/cyber-range/sentinel/VM-Authentication-Failures.json)** 
+
+
 
 <img width="1401" height="676" alt="Screenshot 2025-12-09 at 2 41 47 AM" src="https://github.com/user-attachments/assets/e43e5169-f3d3-4eb0-a82a-5c858eb52586" />
 
