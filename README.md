@@ -104,9 +104,10 @@ Understanding geolocation data enables:
 - Detecting unusual or risky sign-ins  
 - Building map-based visualizations for dashboards  
 - Investigating suspicious authentication activity  
-- Correlating user identity events with geographic patterns  
+- Correlating user identity events with geographic patterns
+  
+<img width="1471" height="1159" alt="KQL count" src="https://github.com/user-attachments/assets/909caf01-f1ee-4d44-a005-9acb17a30e1b" />
 
-<img src="https://github.com/user-attachments/assets/30f3141c-c34f-491c-aea0-6d1bd819b499" width="420"/>
 
 ---
 
