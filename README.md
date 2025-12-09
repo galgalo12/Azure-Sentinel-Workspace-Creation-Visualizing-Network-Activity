@@ -44,7 +44,7 @@ These visualizations allow analysts to detect anomalies, suspicious logins, and 
 4. Add a **query component**  
 5. Paste the KQL from the JSON template  
 
-<img src="https://github.com/user-attachments/assets/c4f462a9-3ee7-4fe8-aaed-9aeeea332f71" width="350">
+<img width="1401" height="676" alt="Screenshot 2025-12-09 at 2 41 47 AM" src="https://github.com/user-attachments/assets/e43e5169-f3d3-4eb0-a82a-5c858eb52586" />
 
 6. Run query → adjust visualization (map, chart, etc.)  
 
