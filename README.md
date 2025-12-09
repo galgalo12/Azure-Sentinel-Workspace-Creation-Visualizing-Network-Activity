@@ -46,11 +46,12 @@ These visualizations allow analysts to detect anomalies, suspicious logins, and 
 
 <img width="1401" height="676" alt="Screenshot 2025-12-09 at 2 41 47 AM" src="https://github.com/user-attachments/assets/e43e5169-f3d3-4eb0-a82a-5c858eb52586" />
 
-6. Run query → adjust visualization (map, chart, etc.)  
+6. Run query → adjust visualization (map, chart, etc.)
+   
+<img width="1404" height="330" alt="Authentication Failures" src="https://github.com/user-attachments/assets/2013d062-3ec8-477d-8abb-dc78fa122a93" />
 
-<img src="https://github.com/user-attachments/assets/7a5c6248-83d6-4424-a241-81102482cddd" width="420">
 
-7. Save & pin to dashboard  
+8. Save & pin to dashboard  
 
 ---
 
